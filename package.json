@@ -9,7 +9,7 @@
     "watch:build": "watch 'npm run build' app/",
     "livereload": "live-reload --port 9091 dist/",
     "start": "http-server -a localhost -p 8000",
-    "watch":"parallelshell 'npm run watch:build' 'npm run livereload' 'npm run start'"
+    "watch": "parallelshell 'npm run watch:build' 'npm run livereload' 'npm run start'"
   },
   "author": "Christoph Baudson",
   "license": "",
@@ -26,6 +26,8 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "moment": "^2.18.1",
+    "react-dom": "^15.6.1",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0"
   }
