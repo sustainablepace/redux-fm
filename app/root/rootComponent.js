@@ -5,6 +5,7 @@ import SchedulerComponent from './scheduler/schedulerComponent'
 import DisplayCurrentDate from './displayCurrentDate/displayCurrentDateComponent'
 import NextDay from './nextDay/nextDayComponent'
 import Calendar from './calendar/calendarComponent'
+import MatchSimulator from './matchSimulator/matchSimulatorComponent'
 import React from 'react';
 
 export default () => (
@@ -15,6 +16,7 @@ export default () => (
         <CurrentDate/>
         <DisplayCurrentDate/>
         <Calendar/>
+        <MatchSimulator/>
         <NextDay/>
     </div>
 );
