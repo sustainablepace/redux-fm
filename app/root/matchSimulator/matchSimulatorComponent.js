@@ -25,13 +25,13 @@ export default connect(
     },
     (dispatch) => {
         const simulate = (fixture) => {
-            if( fixture.fixture[0].strength + 2 * Math.random() > fixture.fixture[1].strength + 2 * Math.random() ) {
+            if( fixture.fixture.home.strength + 2 * Math.random() > fixture.fixture.away.strength + 2 * Math.random() ) {
                 return {
                     home: 1,
                     away: 0
                 };
             }
-            else if( fixture.fixture[0].strength  + 2 * Math.random() < fixture.fixture[1].strength  + 2 * Math.random() ) {
+            else if( fixture.fixture.home.strength  + 2 * Math.random() < fixture.fixture.away.strength  + 2 * Math.random() ) {
                 return {
                     home: 0,
                     away: 1

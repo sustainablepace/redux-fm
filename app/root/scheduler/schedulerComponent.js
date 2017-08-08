@@ -30,8 +30,14 @@ export default connect(
                 for (let k = 0; k < teams.length / 2; k++) {
                     const home = pool[k];
                     const away = pool[teams.length - k - 1];
-                    roundFirstHalf.push([teams[home], teams[away]]);
-                    roundSecondHalf.push([teams[away], teams[home]]);
+                    roundFirstHalf.push({
+                        home: teams[home],
+                        away: teams[away]
+                    });
+                    roundSecondHalf.push({
+                        home: teams[away],
+                        away: teams[home]
+                    });
                 }
                 rounds[j] = roundFirstHalf;
                 rounds[j + teams.length - 1] = roundSecondHalf;
