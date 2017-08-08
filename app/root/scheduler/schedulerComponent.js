@@ -1,6 +1,5 @@
 import {connect} from 'react-redux';
 import React from 'react';
-import Moment from 'moment'
 
 /* Presentational Component */
 class SchedulerComponent extends React.Component {
